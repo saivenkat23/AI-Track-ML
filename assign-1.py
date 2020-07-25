@@ -16,3 +16,15 @@ opt = linprog(c = obj, A_ub = left, b_ub = right, bounds = bound)
 print(opt)
 
 print(f'For getting Maximum Profit\nArea for growing Wheat: {opt.x[0]} in hectares\nArea for growing Barley: {opt.x[1]} in hectares')
+output:
+  con: array([], dtype=float64)
+     fun: -5778.947342194284
+ message: 'Optimization terminated successfully.'
+     nit: 5
+   slack: array([3.98570933e-06, 6.77887059e-03, 4.73684292e+00])
+  status: 0
+ success: True
+       x: array([97.89473581,  7.36842126])
+For getting Maximum Profit
+Area for growing Wheat: 97.89473581371212 in hectares
+Area for growing Barley: 7.368421262572312 in hectares
